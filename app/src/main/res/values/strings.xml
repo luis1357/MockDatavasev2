@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Mock Datavase v2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="memyself_gmail_com">MeMyself@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="passwordp">password</string>
+    <string name="sign_or_register">Sign or Register</string>
+    <string name="please_fill_the_next_fields_to_register">Please fill the next fields to register.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search...</string>
+    <string name="question_of_the_day">Question of the Day!</string>
+    <string name="what_are_the_components_we_can_use_for_background_tasks">What are the components we can use for background tasks?</string>
+    <string name="answer">Answer!</string>
+    <string name="new_question">New Question!</string>
+    <string name="android_news">Android News!</string>
+    <string name="so_about_that_google_tax_on_android_makers_in_the_eu_report_pegs_it">So, about that Google tax on Android makers in the EU – report pegs it ...</string>
+    <string name="google_will_charge_android_smartphone_makers_wishing_to_include_its_play_store_as_much_as_40_in_europe_according_to_documents">Google will charge Android smartphone makers wishing to include its Play Store as much as $40 in Europe, according to documents ...</string>
+</resources>
