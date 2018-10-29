@@ -10,11 +10,13 @@ import com.example.luisenriquez.mockdatavasev2.R
 import com.example.luisenriquez.mockdatavasev2.databinding.ActivityRegisterBinding
 import com.example.luisenriquez.mockdatavasev2.viewmodels.UserViewModel
 
-class RegisterActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity()
+{
     private lateinit var bindings:ActivityRegisterBinding
     private lateinit var viewModel: UserViewModel
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         bindings = DataBindingUtil.setContentView(this, R.layout.activity_register)
         viewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)
@@ -43,13 +45,14 @@ class RegisterActivity : AppCompatActivity() {
             if (bindings.etPassConf.editText?.text.isNullOrBlank())
                 bindings.etPassConf.error = "RequiredField"
 
-            if (bindings.etPassword.editText?.text.toString() != bindings.etPassConf.editText?.text.toString()) {
+            if (bindings.etPassword.editText?.text.toString() != bindings.etPassConf.editText?.text.toString())
+            {
                 bindings.etPassword.error = "password mismatch"
-                bindings.etPassConf.error = "password mismatch"
             }
 
 
-            if (!has_error()) {
+            if (!has_error())
+            {
                 viewModel.signup(bindings.etFirstName.editText?.text.toString(),
                         bindings.etLastName.editText?.text.toString(),
                         bindings.etEmail.editText?.text.toString(),

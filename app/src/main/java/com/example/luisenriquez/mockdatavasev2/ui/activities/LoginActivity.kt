@@ -4,12 +4,18 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.databinding.DataBindingUtil
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
 import android.view.Window
 import com.example.luisenriquez.mockdatavasev2.R
 import com.example.luisenriquez.mockdatavasev2.databinding.ActivityLoginBinding
+import com.example.luisenriquez.mockdatavasev2.ui.fragments.RegisterDialog
 import com.example.luisenriquez.mockdatavasev2.viewmodels.UserViewModel
+import android.graphics.drawable.ColorDrawable
+
+
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding:ActivityLoginBinding
@@ -24,7 +30,12 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btnSignup.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
+
+            val regDialog = RegisterDialog(this)
+            regDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            regDialog.show()
+
+            //startActivity(Intent(this, RegisterActivity::class.java))
         }
 
         //Listening to LiveData

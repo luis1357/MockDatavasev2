@@ -30,4 +30,5 @@
     <string name="sign_up">Sign Up</string>
     <string name="not_a_member">Not a member?</string>
     <string name="app_nm">The Knowledge Base</string>
+    <string name="create_account">Create Account</string>
 </resources>
