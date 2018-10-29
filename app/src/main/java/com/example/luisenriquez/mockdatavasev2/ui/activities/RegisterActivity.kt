@@ -58,7 +58,7 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         //observing livedata
-        viewModel.signup_response.observe(this, Observer {
+        viewModel.observer_signup(this, Observer {
             if (it?.status == "success")
                 startActivity(Intent(this, MainActivity::class.java))
             else
