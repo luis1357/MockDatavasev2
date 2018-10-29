@@ -6,6 +6,7 @@ import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
 import com.example.luisenriquez.mockdatavasev2.R
 import com.example.luisenriquez.mockdatavasev2.databinding.ActivityLoginBinding
 import com.example.luisenriquez.mockdatavasev2.viewmodels.UserViewModel

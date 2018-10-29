@@ -25,4 +25,9 @@
     <string name="android_news">Android News!</string>
     <string name="so_about_that_google_tax_on_android_makers_in_the_eu_report_pegs_it">So, about that Google tax on Android makers in the EU – report pegs it ...</string>
     <string name="google_will_charge_android_smartphone_makers_wishing_to_include_its_play_store_as_much_as_40_in_europe_according_to_documents">Google will charge Android smartphone makers wishing to include its Play Store as much as $40 in Europe, according to documents ...</string>
+    <string name="login_background">Login Background</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="not_a_member">Not a member?</string>
+    <string name="app_nm">The Knowledge Base</string>
 </resources>

@@ -5,7 +5,6 @@ import com.example.luisenriquez.mockdatavasev2.database.db.AppDB
 import com.example.luisenriquez.mockdatavasev2.network.models.data.Question
 import com.example.luisenriquez.mockdatavasev2.network.models.data.RandomQuestion
 import com.example.luisenriquez.mockdatavasev2.network.routes.QuestionRoutes
-import kotlinx.coroutines.experimental.Deferred
 import kotlinx.coroutines.experimental.launch
 
 
