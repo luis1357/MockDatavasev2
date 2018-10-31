@@ -14,7 +14,7 @@ import com.example.luisenriquez.mockdatavasev2.databinding.ActivityLoginBinding
 import com.example.luisenriquez.mockdatavasev2.ui.fragments.RegisterDialog
 import com.example.luisenriquez.mockdatavasev2.viewmodels.UserViewModel
 import android.graphics.drawable.ColorDrawable
-
+import android.support.v4.content.ContextCompat
 
 
 class LoginActivity : AppCompatActivity() {
