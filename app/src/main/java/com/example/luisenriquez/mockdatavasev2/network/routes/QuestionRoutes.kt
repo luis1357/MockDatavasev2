@@ -33,4 +33,7 @@ interface QuestionRoutes {
     @Headers("BB-KEY: ${Constants.bb_key}", "Content-Type: application/json")
     @POST("question/upload")
     fun uploadQuestions(@Body data:UploadQuestion.Data):Deferred<UploadQuestion.Response>
+
+//    @Headers("BB-KEY: ${Constants.bb_key}", "Content-Type: application/json")
+//    fun getCategories():
 }

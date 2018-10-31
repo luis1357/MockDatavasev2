@@ -15,9 +15,11 @@ class UserRepo(val user_routes:UserRoutes, val db: AppDB) {
     val signup_response: MutableLiveData<Signup.Response> = MutableLiveData()
 
     fun save_token(token:String) {
-        db.tokenDao().run {
-            this.deleteToken()
-            this.insertToken(WebTokenEntity(token = token))
+        launch {
+            db.tokenDao().run {
+                this.deleteToken()
+                this.insertToken(WebTokenEntity(token = token))
+            }
         }
     }
 

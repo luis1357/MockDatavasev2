@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.activities.LoginActivity">
 
+    <data>
+        <variable
+            name="vm"
+            type="com.example.luisenriquez.mockdatavasev2.viewmodels.UserViewModel"/>
+    </data>
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

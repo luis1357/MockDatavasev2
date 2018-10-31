@@ -8,6 +8,7 @@ import android.widget.TextView
 import com.example.luisenriquez.mockdatavasev2.R
 import com.example.luisenriquez.mockdatavasev2.databinding.ActivityMainBinding
 import com.example.luisenriquez.mockdatavasev2.ui.fragments.MainPage
+import com.example.luisenriquez.mockdatavasev2.ui.fragments.Questions
 import kotlin.concurrent.fixedRateTimer
 
 class MainActivity : AppCompatActivity() {
@@ -23,12 +24,11 @@ class MainActivity : AppCompatActivity() {
         binding.navigation.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
-//                    mTextMessage!!.setText(R.string.title_home)
-
+                    supportFragmentManager.beginTransaction().replace(R.id.frag_cont, MainPage.newInstance()).commit()
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.navigation_dashboard -> {
-//                    mTextMessage!!.setText(R.string.title_dashboard)
+                    supportFragmentManager.beginTransaction().replace(R.id.frag_cont, Questions.getInstance()).commit()
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.navigation_notifications -> {

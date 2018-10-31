@@ -12,8 +12,7 @@ import javax.inject.Inject
 
 class QuestionViewModel(app:Application):AndroidViewModel(app) {
 
-
-
+    var swag = "mmkmkm"
 
     @Inject
     lateinit var question_repo:QuestionRepo
